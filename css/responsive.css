@@ -1,0 +1,303 @@
+@media (max-width: 1000px) {
+
+    .nav-container {
+
+        padding: 20px;
+
+    }
+
+
+    .explore-button {
+
+        display: none;
+
+    }
+
+
+    .menu-toggle {
+
+        display: block;
+
+    }
+
+
+    nav {
+
+        position: absolute;
+
+        top: 80px;
+
+        left: 0;
+
+        right: 0;
+
+        background: rgba(8,7,5,.98);
+
+        display: none;
+
+        flex-direction: column;
+
+        padding: 30px;
+
+        gap: 25px;
+
+        border-bottom: 1px solid rgba(255,255,255,.1);
+
+    }
+
+
+    nav.open {
+
+        display: flex;
+
+    }
+
+
+    .hero-content {
+
+        padding-left: 25px;
+        padding-right: 25px;
+
+    }
+
+
+    .intro-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .intro-text {
+
+        padding-top: 0;
+
+    }
+
+
+    .artifact-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .large-card {
+
+        grid-column: 1 / -1;
+
+    }
+
+
+    .timeline-preview {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .timeline-content {
+
+        padding-left: 0;
+
+    }
+
+
+    .timeline-visual {
+
+        order: 2;
+
+    }
+
+
+    .exhibition-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .hero h1 {
+
+        font-size: 52px;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .hero-content > p {
+
+        font-size: 14px;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .hero-bottom {
+
+        left: 20px;
+        right: 20px;
+
+    }
+
+
+    .hero-coordinate {
+
+        display: none;
+
+    }
+
+
+    .intro-section,
+    .featured-section,
+    .exhibition-section {
+
+        padding: 90px 20px;
+
+    }
+
+
+    .stats-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .stat-card:nth-child(2) {
+
+        border-right: none;
+
+    }
+
+
+    .section-heading {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 25px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 38px;
+
+    }
+
+
+    .artifact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .large-card {
+
+        grid-column: auto;
+
+    }
+
+
+    .large-card .artifact-image,
+    .artifact-image {
+
+        height: 400px;
+
+    }
+
+
+    .timeline-preview {
+
+        padding: 80px 20px;
+
+    }
+
+
+    .timeline-visual {
+
+        height: 280px;
+
+    }
+
+
+    .sun-disc {
+
+        width: 120px;
+        height: 120px;
+
+    }
+
+
+    .exhibition-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .doorway-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .footer-top {
+
+        flex-direction: column;
+
+        gap: 50px;
+
+    }
+
+
+    .footer-links {
+
+        gap: 50px;
+
+    }
+
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .modal-content {
+
+        padding: 35px 25px;
+
+    }
+
+
+    .modal-content h2 {
+
+        font-size: 35px;
+
+    }
+
+}
