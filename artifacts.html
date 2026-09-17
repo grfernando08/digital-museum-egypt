@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Artifacts | Neferti</title>
+
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet">
+
+<link rel="stylesheet"
+      href="css/style.css">
+
+<link rel="stylesheet"
+      href="css/artifacts.css">
+
+<link rel="stylesheet"
+      href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<div class="nav-container">
+
+<a href="index.html" class="logo">
+
+<span class="logo-eye">𓂀</span>
+
+<span>
+NEFERTI
+<small>DIGITAL MUSEUM</small>
+</span>
+
+</a>
+
+
+<button class="menu-toggle"
+        id="menuToggle">
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+
+<nav id="mainNavigation">
+
+<a href="index.html">
+Home
+</a>
+
+<a href="artifacts.html"
+   class="active">
+
+Artifacts
+</a>
+
+<a href="timeline.html">
+Timeline
+</a>
+
+<a href="exhibitions.html">
+Exhibitions
+</a>
+
+<a href="about.html">
+About
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<main class="artifact-page">
+
+
+<section class="page-hero">
+
+<div>
+
+<span class="small-label">
+DIGITAL COLLECTION
+</span>
+
+<h1>
+Artifacts
+</h1>
+
+<p>
+Objects carry stories. Explore selected pieces from
+thousands of years of Egyptian history.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section class="artifact-explorer">
+
+
+<div class="explorer-header">
+
+<div>
+
+<span class="small-label">
+COLLECTION EXPLORER
+</span>
+
+<h2>
+Explore the Archive
+</h2>
+
+</div>
+
+
+<div class="search-box">
+
+<input
+type="text"
+id="artifactSearch"
+placeholder="Search artifacts...">
+
+<span>
+⌕
+</span>
+
+</div>
+
+</div>
+
+
+
+<div class="filter-buttons">
+
+<button class="filter active"
+        data-filter="all">
+
+All
+
+</button>
+
+<button class="filter"
+        data-filter="royal">
+
+Royal
+
+</button>
+
+<button class="filter"
+        data-filter="religion">
+
+Religion
+
+</button>
+
+<button class="filter"
+        data-filter="writing">
+
+Writing
+
+</button>
+
+<button class="filter"
+        data-filter="daily">
+
+Daily Life
+
+</button>
+
+</div>
+
+
+
+<div class="archive-grid"
+     id="artifactGrid">
+
+
+<article class="archive-card"
+         data-category="royal"
+         data-name="golden mask">
+
+<div class="archive-image">
+
+<img
+src="assets/images/tutankhamun.jpg"
+alt="Golden mask">
+
+<span>
+AC-001
+</span>
+
+</div>
+
+<div class="archive-details">
+
+<small>
+ROYAL
+</small>
+
+<h3>
+The Golden Mask
+</h3>
+
+<p>
+New Kingdom
+</p>
+
+<button onclick="showArchiveArtifact(
+'The Golden Mask',
+'Royal',
+'New Kingdom',
+'An iconic example of ancient Egyptian royal craftsmanship.'
+)">
+
+View artifact
+
+</button>
+
+</div>
+
+</article>
+
+
+
+<article class="archive-card"
+         data-category="writing"
+         data-name="rosetta stone">
+
+<div class="archive-image">
+
+<img
+src="assets/images/rosetta.jpg"
+alt="Rosetta Stone">
+
+<span>
+AC-002
+</span>
+
+</div>
+
+<div class="archive-details">
+
+<small>
+WRITING
+</small>
+
+<h3>
+Rosetta Stone
+</h3>
+
+<p>
+Ptolemaic Period
+</p>
+
+<button onclick="showArchiveArtifact(
+'Rosetta Stone',
+'Writing',
+'196 BCE',
+'A multilingual inscription that became important in understanding Egyptian hieroglyphs.'
+)">
+
+View artifact
+
+</button>
+
+</div>
+
+</article>
+
+
+
+<article class="archive-card"
+         data-category="religion"
+         data-name="anubis">
+
+<div class="archive-image">
+
+<img
+src="assets/images/anubis.jpg"
+alt="Anubis">
+
+<span>
+AC-003
+</span>
+
+</div>
+
+<div class="archive-details">
+
+<small>
+RELIGION
+</small>
+
+<h3>
+Anubis
+</h3>
+
+<p>
+New Kingdom
+</p>
+
+<button onclick="showArchiveArtifact(
+'Anubis',
+'Religion',
+'New Kingdom',
+'Anubis was associated with funerary practices and protection of the dead.'
+)">
+
+View artifact
+
+</button>
+
+</div>
+
+</article>
+
+
+
+<article class="archive-card"
+         data-category="daily"
+         data-name="papyrus">
+
+<div class="archive-image">
+
+<img
+src="assets/images/papyrus.jpg"
+alt="Ancient Egyptian papyrus">
+
+<span>
+AC-004
+</span>
+
+</div>
+
+<div class="archive-details">
+
+<small>
+DAILY LIFE
+</small>
+
+<h3>
+Papyrus Manuscript
+</h3>
+
+<p>
+Ancient Egypt
+</p>
+
+<button onclick="showArchiveArtifact(
+'Papyrus Manuscript',
+'Daily Life',
+'Ancient Egypt',
+'Papyrus was widely used for writing and record keeping in ancient Egypt.'
+)">
+
+View artifact
+
+</button>
+
+</div>
+
+</article>
+
+
+
+<article class="archive-card"
+         data-category="religion"
+         data-name="sphinx">
+
+<div class="archive-image">
+
+<img
+src="assets/images/sphinx.jpg"
+alt="Sphinx">
+
+<span>
+AC-005
+</span>
+
+</div>
+
+<div class="archive-details">
+
+<small>
+RELIGION
+</small>
+
+<h3>
+Great Sphinx
+</h3>
+
+<p>
+Old Kingdom
+</p>
+
+<button onclick="showArchiveArtifact(
+'Great Sphinx',
+'Monument',
+'Old Kingdom',
+'The Great Sphinx combines the body of a lion with a human head.'
+)">
+
+View artifact
+
+</button>
+
+</div>
+
+</article>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+
+<div class="modal"
+     id="archiveModal">
+
+<div class="modal-background"
+     onclick="closeArchiveArtifact()">
+</div>
+
+<div class="modal-content">
+
+<button class="modal-close"
+        onclick="closeArchiveArtifact()">
+
+×
+
+</button>
+
+<span id="archiveCategory">
+ARTIFACT
+</span>
+
+<h2 id="archiveTitle">
+Artifact
+</h2>
+
+<p id="archiveDate">
+Date
+</p>
+
+<div class="modal-line"></div>
+
+<p id="archiveDescription">
+Description
+</p>
+
+</div>
+
+</div>
+
+
+
+<script src="js/artifacts.js"></script>
+
+</body>
+
+</html>

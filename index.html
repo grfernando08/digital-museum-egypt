@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Neferti — A digital journey through Ancient Egypt">
+
+    <title>Neferti | Digital Museum of Egypt</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<div id="preloader">
+    <div class="loader-symbol">𓂀</div>
+    <div class="loader-line"></div>
+    <p>Opening the museum...</p>
+</div>
+
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-eye">𓂀</span>
+
+            <span>
+                NEFERTI
+                <small>DIGITAL MUSEUM</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="mainNavigation">
+
+            <a href="index.html" class="active">
+                Home
+            </a>
+
+            <a href="artifacts.html">
+                Artifacts
+            </a>
+
+            <a href="timeline.html">
+                Timeline
+            </a>
+
+            <a href="exhibitions.html">
+                Exhibitions
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </nav>
+
+        <button class="explore-button"
+                onclick="scrollToSection('featured')">
+
+            Explore Museum
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<section class="hero">
+
+    <div class="hero-background"></div>
+
+    <div class="floating-hieroglyph glyph-one">𓂀</div>
+    <div class="floating-hieroglyph glyph-two">𓆣</div>
+    <div class="floating-hieroglyph glyph-three">𓅓</div>
+    <div class="floating-hieroglyph glyph-four">𓋹</div>
+
+    <div class="hero-content">
+
+        <div class="hero-label">
+            DIGITAL ARCHIVE • EGYPT
+        </div>
+
+        <h1>
+            Where the
+            <span>Past</span>
+            Meets the
+            <span>Future</span>
+        </h1>
+
+        <p>
+            Step beyond the museum walls and enter a living digital
+            archive of one of humanity's greatest civilizations.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="artifacts.html"
+               class="primary-button">
+
+                Explore Artifacts
+                <span>→</span>
+
+            </a>
+
+            <a href="#story"
+               class="secondary-button">
+
+                Begin the Journey
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-bottom">
+
+        <div class="scroll-indicator">
+            <span></span>
+            Scroll to explore
+        </div>
+
+        <div class="hero-coordinate">
+            29.9792° N &nbsp; 31.1342° E
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="intro-section" id="story">
+
+    <div class="section-number">
+        01
+    </div>
+
+    <div class="intro-grid">
+
+        <div class="intro-title">
+
+            <span class="small-label">
+                THE STORY
+            </span>
+
+            <h2>
+                A civilization
+                <em>unlike any other.</em>
+            </h2>
+
+        </div>
+
+
+        <div class="intro-text">
+
+            <p>
+                For more than three thousand years, ancient Egypt
+                developed extraordinary achievements in architecture,
+                science, art, medicine and writing.
+            </p>
+
+            <p>
+                Neferti brings fragments of that history into one
+                interactive digital experience.
+            </p>
+
+            <a href="about.html" class="text-link">
+                Discover the story
+                <span>↗</span>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+
+            <strong data-target="3000">
+                0
+            </strong>
+
+            <span>
+                Years of civilization
+            </span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <strong data-target="1200">
+                0
+            </strong>
+
+            <span>
+                Documented artifacts
+            </span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <strong data-target="31">
+                0
+            </strong>
+
+            <span>
+                Dynasties
+            </span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <strong data-target="700">
+                0
+            </strong>
+
+            <span>
+                Historical sites
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="featured-section" id="featured">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="small-label">
+                DIGITAL COLLECTION
+            </span>
+
+            <h2>
+                Featured Artifacts
+            </h2>
+        </div>
+
+        <a href="artifacts.html"
+           class="outline-button">
+
+            View all artifacts
+
+        </a>
+
+    </div>
+
+
+    <div class="artifact-grid">
+
+
+        <article class="artifact-card large-card">
+
+            <div class="artifact-image">
+
+                <img
+                    src="assets/images/tutankhamun.jpg"
+                    alt="Golden mask inspired by Tutankhamun">
+
+                <div class="artifact-overlay">
+
+                    <span>
+                        ROYAL COLLECTION
+                    </span>
+
+                    <button
+                        onclick="openArtifact(
+                        'The Golden Mask',
+                        'New Kingdom',
+                        'c. 1323 BCE',
+                        'A symbol of royal identity and ancient Egyptian craftsmanship.'
+                        )">
+
+                        Explore artifact
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="artifact-info">
+
+                <span>
+                    AC-001
+                </span>
+
+                <h3>
+                    The Golden Mask
+                </h3>
+
+                <p>
+                    New Kingdom • c. 1323 BCE
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="artifact-card">
+
+            <div class="artifact-image">
+
+                <img
+                    src="assets/images/rosetta.jpg"
+                    alt="Rosetta Stone">
+
+                <div class="artifact-overlay">
+
+                    <span>
+                        WRITING
+                    </span>
+
+                    <button
+                        onclick="openArtifact(
+                        'Rosetta Stone',
+                        'Ptolemaic Period',
+                        '196 BCE',
+                        'A famous multilingual inscription that helped unlock Egyptian hieroglyphs.'
+                        )">
+
+                        Explore artifact
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="artifact-info">
+
+                <span>
+                    AC-002
+                </span>
+
+                <h3>
+                    Rosetta Stone
+                </h3>
+
+                <p>
+                    Ptolemaic Period • 196 BCE
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="artifact-card">
+
+            <div class="artifact-image">
+
+                <img
+                    src="assets/images/anubis.jpg"
+                    alt="Anubis statue">
+
+                <div class="artifact-overlay">
+
+                    <span>
+                        RELIGION
+                    </span>
+
+                    <button
+                        onclick="openArtifact(
+                        'Guardian of the Dead',
+                        'New Kingdom',
+                        'c. 1500 BCE',
+                        'An artistic representation of Anubis, associated with funerary rituals.'
+                        )">
+
+                        Explore artifact
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="artifact-info">
+
+                <span>
+                    AC-003
+                </span>
+
+                <h3>
+                    Guardian of the Dead
+                </h3>
+
+                <p>
+                    New Kingdom • c. 1500 BCE
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<section class="timeline-preview">
+
+    <div class="timeline-visual">
+
+        <div class="sun-disc"></div>
+
+        <div class="timeline-line"></div>
+
+        <div class="timeline-dot dot-one"></div>
+        <div class="timeline-dot dot-two"></div>
+        <div class="timeline-dot dot-three"></div>
+
+    </div>
+
+
+    <div class="timeline-content">
+
+        <span class="small-label">
+            TIME MACHINE
+        </span>
+
+        <h2>
+            5,000 years.
+            <br>
+            One journey.
+        </h2>
+
+        <p>
+            Move through the major periods of Egyptian history
+            and discover how culture, technology and architecture
+            changed over thousands of years.
+        </p>
+
+        <a href="timeline.html"
+           class="primary-button">
+
+            Enter the timeline
+            <span>→</span>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<section class="exhibition-section">
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="small-label">
+                CURRENT DIGITAL EXHIBITIONS
+            </span>
+
+            <h2>
+                Enter the Exhibition
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="exhibition-grid">
+
+
+        <article class="exhibition-card">
+
+            <div class="exhibition-number">
+                01
+            </div>
+
+            <h3>
+                Gods & Myths
+            </h3>
+
+            <p>
+                Explore the divine world of ancient Egyptian mythology.
+            </p>
+
+            <a href="exhibitions.html">
+                Enter exhibition →
+            </a>
+
+        </article>
+
+
+        <article class="exhibition-card featured-exhibition">
+
+            <div class="exhibition-number">
+                02
+            </div>
+
+            <h3>
+                Builders of Eternity
+            </h3>
+
+            <p>
+                Discover how ancient engineers created monuments
+                that still stand thousands of years later.
+            </p>
+
+            <a href="exhibitions.html">
+                Enter exhibition →
+            </a>
+
+        </article>
+
+
+        <article class="exhibition-card">
+
+            <div class="exhibition-number">
+                03
+            </div>
+
+            <h3>
+                Life Along the Nile
+            </h3>
+
+            <p>
+                Experience everyday life along the river that shaped Egypt.
+            </p>
+
+            <a href="exhibitions.html">
+                Enter exhibition →
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<section class="discover-section">
+
+    <div class="discover-inner">
+
+        <span class="small-label">
+            YOUR JOURNEY
+        </span>
+
+        <h2>
+            What would you
+            discover first?
+        </h2>
+
+        <p>
+            Choose a doorway and let the museum build a path
+            through Egyptian history for you.
+        </p>
+
+
+        <div class="doorway-container">
+
+            <button
+                class="doorway"
+                onclick="choosePath('history')">
+
+                <span>𓏏</span>
+
+                <strong>
+                    History
+                </strong>
+
+                <small>
+                    Follow the rulers
+                </small>
+
+            </button>
+
+
+            <button
+                class="doorway"
+                onclick="choosePath('science')">
+
+                <span>𓋹</span>
+
+                <strong>
+                    Science
+                </strong>
+
+                <small>
+                    Discover ancient knowledge
+                </small>
+
+            </button>
+
+
+            <button
+                class="doorway"
+                onclick="choosePath('myths')">
+
+                <span>𓂀</span>
+
+                <strong>
+                    Myths
+                </strong>
+
+                <small>
+                    Meet the gods
+                </small>
+
+            </button>
+
+        </div>
+
+
+        <div id="journeyResult"
+             class="journey-result">
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+    <div class="footer-top">
+
+        <div class="footer-brand">
+
+            <div class="logo">
+                <span class="logo-eye">𓂀</span>
+
+                <span>
+                    NEFERTI
+                    <small>DIGITAL MUSEUM</small>
+                </span>
+            </div>
+
+            <p>
+                Bringing ancient Egypt into the digital age.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <div>
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="artifacts.html">
+                    Artifacts
+                </a>
+
+                <a href="timeline.html">
+                    Timeline
+                </a>
+
+                <a href="exhibitions.html">
+                    Exhibitions
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Museum
+                </h4>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="#">
+                    Research
+                </a>
+
+                <a href="#">
+                    Archive
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            ©
+        </span>
+
+        <span>
+            Designed as an educational digital experience
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+<div id="artifactModal"
+     class="modal">
+
+    <div class="modal-background"
+         onclick="closeArtifact()">
+    </div>
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            onclick="closeArtifact()">
+
+            ×
+
+        </button>
+
+        <span id="modalCategory">
+            ARTIFACT
+        </span>
+
+        <h2 id="modalTitle">
+            Artifact
+        </h2>
+
+        <p id="modalDate">
+            Date
+        </p>
+
+        <div class="modal-line"></div>
+
+        <p id="modalDescription">
+            Description
+        </p>
+
+        <button
+            class="primary-button"
+            onclick="closeArtifact()">
+
+            Return to gallery
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
